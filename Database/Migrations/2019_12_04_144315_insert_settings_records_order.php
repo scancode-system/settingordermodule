@@ -14,7 +14,7 @@ class InsertSettingsRecordsOrder extends Migration
      */
     public function up()
     {
-        Setting::create(['module' => 'SettingOrder', 'alias' => 'Pedido']);
+        Setting::create(['module' => 'SettingOrder', 'alias' => 'Pedido', 'import' => 'Order@setting']);
     }
 
     /**
